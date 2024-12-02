@@ -1,0 +1,174 @@
+object FrmImagen: TFrmImagen
+  Left = 348
+  Height = 784
+  Top = 150
+  Width = 1312
+  Caption = 'FrmImagen'
+  ClientHeight = 764
+  ClientWidth = 1312
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.0.4'
+  object ScrollBox1: TScrollBox
+    Left = 148
+    Height = 474
+    Top = 136
+    Width = 419
+    HorzScrollBar.Page = 405
+    VertScrollBar.Page = 460
+    ClientHeight = 460
+    ClientWidth = 405
+    TabOrder = 0
+    object Image1: TImage
+      Left = 0
+      Height = 465
+      Top = 8
+      Width = 409
+      OnClick = Image1Click
+      OnDblClick = Image1DblClick
+      OnMouseDown = Image1MouseDown
+      OnMouseMove = Image1MouseMove
+      OnMouseUp = Image1MouseUp
+      OnPaint = Image1Paint
+    end
+  end
+  object Image2: TImage
+    Left = 904
+    Height = 205
+    Top = 264
+    Width = 240
+  end
+  object TrackBar1: TTrackBar
+    Left = 72
+    Height = 474
+    Top = 136
+    Width = 25
+    OnChange = TrackBar1Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 912
+    Height = 16
+    Top = 504
+    Width = 8
+    Caption = '0'
+  end
+  object Label2: TLabel
+    Left = 1112
+    Height = 16
+    Top = 504
+    Width = 24
+    Caption = '255'
+  end
+  object Label3: TLabel
+    Left = 872
+    Height = 120
+    Top = 312
+    Width = 7
+    Caption = 'F'#13#10#13#10'R'#13#10#13#10'E'#13#10#13#10'C'#13#10#13#10'U'#13#10#13#10'E'#13#10#13#10'N'#13#10#13#10'C'#13#10#13#10'I'#13#10#13#10#13#10'A'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -10
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    OnClick = Label3Click
+  end
+  object MainMenu1: TMainMenu
+    Left = 680
+    Top = 520
+    object mnuArchivo: TMenuItem
+      Caption = 'Archivo'
+      object mAABRIR: TMenuItem
+        Caption = 'Abrir'
+        OnClick = mAABRIRClick
+      end
+      object mAGuardar: TMenuItem
+        Caption = 'Guardar'
+        OnClick = mAGuardarClick
+      end
+      object mASalir: TMenuItem
+        Caption = 'Salir'
+        OnClick = mASalirClick
+      end
+    end
+    object nmuEditar: TMenuItem
+      Caption = 'Editar'
+      object meeDeshacer: TMenuItem
+        Caption = 'Deshacer'
+        OnClick = meeDeshacerClick
+      end
+    end
+    object nmuVer: TMenuItem
+      Caption = 'Ver'
+      object mnuVImagenCompleta: TMenuItem
+        Caption = 'Imagen Completa'
+        Checked = True
+        OnClick = mnuVImagenCompletaClick
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Op. Puntules'
+      object mnuOpNegativo: TMenuItem
+        Caption = 'Negativo'
+        OnClick = mnuOpNegativoClick
+      end
+      object mnuOpGris1: TMenuItem
+        Caption = 'Gris 1'
+        OnClick = mnuOpGris1Click
+      end
+      object mnuOpgris2: TMenuItem
+        Caption = 'Gris 2'
+        OnClick = mnuOpgris2Click
+      end
+      object mnuPuntualGamma: TMenuItem
+        Caption = 'Gamma'
+        OnClick = mnuPuntualGammaClick
+      end
+      object mnuOpUmbral: TMenuItem
+        Caption = 'Umbral'
+        OnClick = mnuOpUmbralClick
+      end
+      object mnuOpLogaritmico: TMenuItem
+        Caption = 'Logaritmico'
+        OnClick = mnuOpLogaritmicoClick
+      end
+      object mnuOpSeno: TMenuItem
+        Caption = 'Seno'
+        OnClick = mnuOpSenoClick
+      end
+      object mnuOpExpo: TMenuItem
+        Caption = 'Exponencial'
+        OnClick = mnuOpExpoClick
+      end
+    end
+    object nmuOpRegionales: TMenuItem
+      Caption = 'Op. Regionales'
+      object mnuOpRPerfilIn: TMenuItem
+        Caption = 'Perfil de intensidad'
+        OnClick = mnuOpRPerfilInClick
+      end
+    end
+    object nmuHerramientas: TMenuItem
+      Caption = 'Herramientas'
+      object MHHistograma: TMenuItem
+        Caption = 'Histograma'
+        OnClick = MHHistogramaClick
+      end
+      object MHCalculadora: TMenuItem
+        Caption = 'Calculadora'
+        OnClick = MHCalculadoraClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 680
+    Top = 464
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 680
+    Top = 416
+  end
+end

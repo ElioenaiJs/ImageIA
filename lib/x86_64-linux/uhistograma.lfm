@@ -1,0 +1,111 @@
+object FrmHistograma: TFrmHistograma
+  Left = 457
+  Height = 735
+  Top = 239
+  Width = 985
+  Caption = 'FrmHistograma'
+  ClientHeight = 735
+  ClientWidth = 985
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '3.6.0.0'
+  object Button1: TButton
+    Left = 859
+    Height = 31
+    Top = 595
+    Width = 94
+    Caption = 'Cerrar'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 859
+    Height = 31
+    Top = 550
+    Width = 94
+    Caption = 'Aplicar'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object ImgHisto: TImage
+    Left = 50
+    Height = 581
+    Top = 50
+    Width = 720
+  end
+  object Label1: TLabel
+    Left = 20
+    Height = 380
+    Top = 200
+    Width = 8
+    Caption = 'F'#10#10'r'#10#10'e'#10#10'c'#10#10'u'#10#10'e'#10#10'n'#10#10'c'#10#10'i'#10#10'a'
+    ParentBidiMode = False
+    ParentFont = False
+    ParentShowHint = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 800
+    Height = 261
+    Top = 110
+    Width = 231
+    Caption = 'Canales'
+    ClientHeight = 236
+    ClientWidth = 227
+    TabOrder = 2
+    object chkRojo: TCheckBox
+      Left = 12
+      Height = 24
+      Top = 12
+      Width = 52
+      Caption = 'Rojo'
+      TabOrder = 0
+    end
+    object chkVerde: TCheckBox
+      Left = 12
+      Height = 24
+      Top = 50
+      Width = 60
+      Caption = 'Verde'
+      TabOrder = 1
+    end
+    object chkAzul: TCheckBox
+      Left = 12
+      Height = 24
+      Top = 90
+      Width = 50
+      Caption = 'Azul'
+      TabOrder = 2
+    end
+    object chkGris: TCheckBox
+      Left = 12
+      Height = 24
+      Top = 130
+      Width = 46
+      Caption = 'Gris'
+      TabOrder = 3
+    end
+  end
+  object Label2: TLabel
+    Left = 50
+    Height = 20
+    Top = 640
+    Width = 8
+    Caption = '0'
+  end
+  object Label3: TLabel
+    Left = 340
+    Height = 20
+    Top = 640
+    Width = 88
+    Caption = 'Tonos de gris'
+  end
+  object Label4: TLabel
+    Left = 740
+    Height = 20
+    Top = 640
+    Width = 24
+    Caption = '255'
+  end
+end

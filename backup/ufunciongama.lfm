@@ -1,0 +1,75 @@
+object Frmfunciongama: TFrmfunciongama
+  Left = 607
+  Height = 444
+  Top = 321
+  Width = 664
+  Caption = 'funcion gama'
+  ClientHeight = 444
+  ClientWidth = 664
+  OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
+  object Label1: TLabel
+    Left = 67
+    Height = 17
+    Top = 57
+    Width = 98
+    Caption = 'Valor de Gama'
+  end
+  object lblPosicion: TLabel
+    Left = 176
+    Height = 17
+    Top = 56
+    Width = 20
+    Caption = '1.0'
+  end
+  object Baceptar: TButton
+    Left = 73
+    Height = 25
+    Top = 345
+    Width = 75
+    Caption = 'Aceptar'
+    ModalResult = 1
+    TabOrder = 0
+    OnClick = BaceptarClick
+  end
+  object Bcancelar: TButton
+    Left = 448
+    Height = 25
+    Top = 345
+    Width = 75
+    Caption = 'Cancelar'
+    TabOrder = 1
+    OnClick = BcancelarClick
+  end
+  object TrackBar1: TTrackBar
+    Left = 92
+    Height = 49
+    Top = 199
+    Width = 444
+    Max = 100
+    OnChange = TrackBar1Change
+    Position = 20
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 92
+    Height = 17
+    Top = 248
+    Width = 20
+    Caption = '0.5'
+  end
+  object Label3: TLabel
+    Left = 176
+    Height = 17
+    Top = 248
+    Width = 20
+    Caption = '1.0'
+  end
+  object Label4: TLabel
+    Left = 512
+    Height = 17
+    Top = 248
+    Width = 20
+    Caption = '5.0'
+  end
+end
